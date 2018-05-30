@@ -1,0 +1,126 @@
+#{$namespace} {
+    .ng-ui-btn {
+        display: inline-block;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        border: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.7142857143;
+        user-select: none;
+        border-radius: $borderRadius;
+        background: $btnDefault;
+        color: $btnDefaultColor;
+        text-decoration: none;
+        transition: all .2s;
+        position: relative;
+        &[disabled],
+        &.disabled {
+            opacity: .5;
+            cursor: not-allowed;
+            .ng-ui-btn-effect {
+                display: none;
+            }
+            &:hover,
+            &:focus {
+                background: $btnDefault;
+            }
+        }
+        &:focus {
+            outline: 0;
+        }
+        &:hover,
+        &:focus {
+            background: darken($btnDefault, 10%);
+            text-decoration: none;
+        }
+        &.ng-ui-btn-primary {
+            background: $btnPrimary;
+            color: $btnPrimaryColor;
+            &[disabled]
+            &.disabled {
+                &:hover,
+                &:focus {
+                    background: $btnPrimary;
+                }
+            }
+            &:hover,
+            &:focus {
+                background: desaturate(darken($btnPrimary, 8%), 10%);
+            }
+            .ng-ui-btn-effect {
+                background: hsla(0, 0, 100, .25);
+            }
+        }
+        &.ng-ui-btn-link {
+            color: $linkColor;
+            background: transparent;
+        }
+        .md-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 .25em 0 0;
+            float: left;
+            &.right {
+                float: right;
+                margin: 0 0 0 .25em;
+            }
+        }
+        .ng-ui-btn-effect {
+            position: absolute;
+            display: block;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            background: hsla(0, 0, 0, .1);
+            border-radius: 50%;
+            pointer-events: none;
+            animation: effectSize .5s cubic-bezier(.39, .76, .6, .98), effectFade .5s cubic-bezier(.34, .29, .87, .57);
+        }
+    }
+    .ng-ui-btn-group {
+        @extend %clearfix;
+        margin: 1em 0;
+        > .ng-ui-btn {
+            float: left;
+            margin-left: 1px;
+            border-radius: 0;
+            &:first-child {
+                border-top-left-radius: $borderRadius;
+                border-bottom-left-radius: $borderRadius;
+                margin-left: 0;
+                border-left: 0;
+            }
+            &:last-child {
+                border-top-right-radius: $borderRadius;
+                border-bottom-right-radius: $borderRadius;
+            }
+        }
+    }
+    .ng-ui-actions {
+        margin: 1em 0;
+        .ng-ui-btn {
+            margin-right: .5em;
+        }
+    }
+}
+@keyframes effectSize {
+    0% {
+        width: 0;
+        height: 0;
+    }
+}
+@keyframes effectFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
