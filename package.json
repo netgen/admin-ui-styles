@@ -1,11 +1,13 @@
 {
   "name": "@netgen/admin-ui",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "description": "NPM package providing base styles for building admin UI interfaces",
+  "keywords": ["admin", "admin ui", "style", "netgen"],
+  "author": "Netgen <info@netgen.hr>",
+  "homepage": "https://github.com/netgen/admin-ui-styles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netgen/admin-ui-styles.git"
+  }
 }
