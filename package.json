@@ -20,15 +20,28 @@
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/style.scss dist/css/style.css",
     "css-prefix": "postcss --use autoprefixer --replace \"dist/css/*.css\" \"!dist/css/*.min.css\"",
     "css-minify": "cleancss --level 1 --source-map --source-map-inline-sources --output dist/css/style.min.css dist/css/style.css",
-    "watch": "nodemon --ignore dist/ -e scss -x \"npm run css\""
+    "js": "npm-run-all --sequential js-compile* js-minify",
+    "js-compile": "browserify js/app.js --outfile dist/js/app.js --transform babelify",
+    "js-compile-include": "browserify js/ngui.js --outfile dist/js/include/ngui.js --transform babelify",
+    "js-minify": "uglifyjs --compress typeofs=false --mangle --comments \"/^!/\" --output dist/js/include/ngui.min.js dist/js/include/ngui.js",
+    "watch": "npm-run-all --parallel watch-css watch-js",
+    "watch-css": "nodemon --ignore dist/ -e scss -x \"yarn run css\"",
+    "watch-js": "nodemon --ignore scss/ --ignore dist/ -e js -x \"yarn run js\""
   },
   "devDependencies": {
     "autoprefixer": "^8.5.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
     "clean-css-cli": "^4.1.11",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
     "npm-run-all": "^4.1.3",
-    "postcss-cli": "^5.0.0"
+    "postcss-cli": "^5.0.0",
+    "uglify-js": "^3.3.28"
   },
   "browserslist": [
     "last 2 major version",
@@ -41,5 +54,6 @@
     "Safari >= 9",
     "Android >= 4.4",
     "Opera >= 30"
-  ]
+  ],
+  "main": "dist/js/app"
 }
