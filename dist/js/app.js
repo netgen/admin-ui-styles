@@ -4,6 +4,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = NgUiInit;
 
 var _btn = require('./btn/btn');
 
@@ -15,7 +16,7 @@ var _tabs2 = _interopRequireDefault(_tabs);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = NgUiInit = function NgUiInit() {
+function NgUiInit() {
   var nguibtns = document.getElementsByClassName('ng-ui-btn');
   [].forEach.call(nguibtns, function (el) {
     return new _btn2.default(el);

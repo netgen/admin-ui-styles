@@ -1,7 +1,7 @@
 import NgUiBtn from './btn/btn';
 import NgUiTabs from './tabs/tabs';
 
-export default NgUiInit = () => {
+export default function NgUiInit () {
   const nguibtns = document.getElementsByClassName('ng-ui-btn');
   [].forEach.call(nguibtns, el => new NgUiBtn(el));
 
