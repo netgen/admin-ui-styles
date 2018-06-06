@@ -26,7 +26,7 @@ Import styles to scss file:
 @import "@netgen/admin-ui/scss/style";
 ```
 
-You also need to configure sass-loader to understand the `@netgen` imports used by MDC Web. Update your sass-loader config by changing `{ loader: 'sass-loader' }` to:
+You also need to configure sass-loader to understand the `@netgen` imports from node_modules. Update your sass-loader config by changing `{ loader: 'sass-loader' }` to:
 ```js
 {
   loader: 'sass-loader',
