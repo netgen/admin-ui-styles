@@ -12,7 +12,7 @@ Including:
 
 Install the Node dependency:
 ```
-npm install -S @netgen/admin-ui
+npm install @netgen/admin-ui
 ```
 
 ## Using CSS
