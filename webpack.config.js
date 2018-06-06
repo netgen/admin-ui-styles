@@ -13,7 +13,7 @@ const bundle = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-env', 'babel-preset-es2015', 'babel-preset-stage-0'],
+            presets: ['babel-preset-env', 'babel-preset-stage-1'],
           },
         },
       },
@@ -33,10 +33,11 @@ const nguiinit = {
   module: {
     rules: [
       {
+        test: /\.js$/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['babel-preset-env', 'babel-preset-es2015', 'babel-preset-stage-0'],
+            presets: ['babel-preset-env', 'babel-preset-stage-1'],
           },
         },
       },
@@ -44,4 +45,4 @@ const nguiinit = {
   },
 };
 
-module.exports = [bundle, nguiinit];
+module.exports = [nguiinit, bundle];

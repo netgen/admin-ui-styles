@@ -9,7 +9,7 @@ export default class NgUiTabs {
 
   init() {
     if (this.el.dataset.nguitabs) return;
-    this.el.dataset.nguitabs = this;
+    this.el.dataset.nguitabs = true;
     this.setupEvents();
     this.initialSelect();
   }

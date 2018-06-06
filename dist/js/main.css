@@ -1,0 +1,623 @@
+/* Colors */
+/* Dimensions */
+.ng-ui-app .ng-ui-btn-group::after, .ng-ui-pagination::after {
+  display: table;
+  clear: both;
+  content: ''; }
+
+.ng-ui-app input[type='checkbox'] + label::before, .ng-ui-app input[type='checkbox'] + label::after,
+.ng-ui-app input[type='radio'] + label::before,
+.ng-ui-app input[type='radio'] + label::after, .jstree-ng-ui .jstree-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased; }
+
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+body.ng-ui-resizing {
+  cursor: ew-resize; }
+
+.ng-ui-app {
+  min-height: 100%;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #404040;
+  background: whitesmoke;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  /* messages */
+  /* header */ }
+  .ng-ui-app * {
+    box-sizing: border-box; }
+  .ng-ui-app .ng-ui-container {
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    align-items: stretch; }
+  .ng-ui-app .ng-ui-sidebar {
+    width: 240px;
+    background: #e6e6e6; }
+    .ng-ui-app .ng-ui-sidebar .jstree-ng-ui {
+      padding: 15px;
+      overflow-x: hidden; }
+  .ng-ui-app .ng-ui-content {
+    flex: 1;
+    padding: 15px;
+    overflow-x: auto; }
+  .ng-ui-app .ng-ui-message {
+    margin: 2em 0 3em;
+    padding: 15px;
+    background: #e4ecf1; }
+    .ng-ui-app .ng-ui-message.ng-ui-message-success {
+      background: #a3f5da; }
+    .ng-ui-app .ng-ui-message.ng-ui-message-error {
+      background: #ffcccc; }
+  .ng-ui-app .ng-ui-header {
+    background: #4d4d4d; }
+
+.layout-column.main-column {
+  background: #f5f5f5; }
+
+.ng-ui-app a {
+  color: #0098c7;
+  text-decoration: none; }
+  .ng-ui-app a:hover {
+    text-decoration: underline; }
+
+.ng-ui-app h1,
+.ng-ui-app h2,
+.ng-ui-app h3,
+.ng-ui-app h4 {
+  font-weight: 500;
+  margin: 2em 0 1em; }
+
+.ng-ui-app h1 {
+  font-size: 2.291em; }
+
+.ng-ui-app h2 {
+  font-size: 1.618em; }
+
+.ng-ui-app h3 {
+  font-size: 1.416em; }
+
+.ng-ui-app h4 {
+  font-size: 1em; }
+
+.ng-ui-app .ng-ui-badge {
+  display: inline-block;
+  margin-left: 4px;
+  vertical-align: middle;
+  padding: 0 2px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 20px;
+  min-width: 20px;
+  text-align: center;
+  background: gray;
+  color: #fff;
+  border-radius: 500px; }
+
+.ng-ui-app .ng-ui-btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.7142857143;
+  user-select: none;
+  border-radius: 2px;
+  background: #fff;
+  color: #595959;
+  text-decoration: none;
+  transition: all .2s;
+  position: relative; }
+  .ng-ui-app .ng-ui-btn[disabled], .ng-ui-app .ng-ui-btn.disabled {
+    opacity: .5;
+    cursor: not-allowed; }
+    .ng-ui-app .ng-ui-btn[disabled] .ng-ui-btn-effect, .ng-ui-app .ng-ui-btn.disabled .ng-ui-btn-effect {
+      display: none; }
+    .ng-ui-app .ng-ui-btn[disabled]:hover, .ng-ui-app .ng-ui-btn[disabled]:focus, .ng-ui-app .ng-ui-btn.disabled:hover, .ng-ui-app .ng-ui-btn.disabled:focus {
+      background: #fff; }
+  .ng-ui-app .ng-ui-btn:focus {
+    outline: 0; }
+  .ng-ui-app .ng-ui-btn:hover, .ng-ui-app .ng-ui-btn:focus {
+    background: #e6e6e6;
+    text-decoration: none; }
+  .ng-ui-app .ng-ui-btn.ng-ui-btn-primary {
+    background: #0098c7;
+    color: #fff; }
+    .ng-ui-app .ng-ui-btn.ng-ui-btn-primary[disabled] .ng-ui-app .ng-ui-btn.ng-ui-btn-primary.disabled:hover, .ng-ui-app .ng-ui-btn.ng-ui-btn-primary[disabled] .ng-ui-app .ng-ui-btn.ng-ui-btn-primary.disabled:focus {
+      background: #0098c7; }
+    .ng-ui-app .ng-ui-btn.ng-ui-btn-primary:hover, .ng-ui-app .ng-ui-btn.ng-ui-btn-primary:focus {
+      background: #087596; }
+    .ng-ui-app .ng-ui-btn.ng-ui-btn-primary .ng-ui-btn-effect {
+      background: rgba(255, 255, 255, 0.25); }
+  .ng-ui-app .ng-ui-btn.ng-ui-btn-link {
+    color: #0098c7;
+    background: transparent; }
+  .ng-ui-app .ng-ui-btn .md-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 .25em 0 0;
+    float: left; }
+    .ng-ui-app .ng-ui-btn .md-icon.right {
+      float: right;
+      margin: 0 0 0 .25em; }
+  .ng-ui-app .ng-ui-btn .ng-ui-btn-effect {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: effectSize 0.5s cubic-bezier(0.39, 0.76, 0.6, 0.98), effectFade 0.5s cubic-bezier(0.34, 0.29, 0.87, 0.57); }
+
+.ng-ui-app .ng-ui-btn-group {
+  margin: 1em 0; }
+  .ng-ui-app .ng-ui-btn-group > .ng-ui-btn {
+    float: left;
+    margin-left: 1px;
+    border-radius: 0; }
+    .ng-ui-app .ng-ui-btn-group > .ng-ui-btn:first-child {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      margin-left: 0;
+      border-left: 0; }
+    .ng-ui-app .ng-ui-btn-group > .ng-ui-btn:last-child {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px; }
+
+.ng-ui-app .ng-ui-actions {
+  margin: 1em 0; }
+  .ng-ui-app .ng-ui-actions .ng-ui-btn {
+    margin-right: .5em; }
+
+@keyframes effectSize {
+  0% {
+    width: 0;
+    height: 0; } }
+
+@keyframes effectFade {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.ng-ui-app input[type='checkbox'],
+.ng-ui-app input[type='radio'] {
+  position: absolute;
+  pointer-events: all;
+  opacity: 0;
+  left: -9999em; }
+  .ng-ui-app input[type='checkbox'] + label,
+  .ng-ui-app input[type='radio'] + label {
+    position: relative;
+    padding-left: 2.5em;
+    cursor: pointer;
+    display: block;
+    margin: 1em 0;
+    min-height: 22px; }
+    .ng-ui-app input[type='checkbox'] + label::before, .ng-ui-app input[type='checkbox'] + label::after,
+    .ng-ui-app input[type='radio'] + label::before,
+    .ng-ui-app input[type='radio'] + label::after {
+      position: absolute;
+      left: 0;
+      top: -2px;
+      transition: all .2s ease-out; }
+    .ng-ui-app input[type='checkbox'] + label::after,
+    .ng-ui-app input[type='radio'] + label::after {
+      opacity: 0;
+      transform: scale(0);
+      color: #0098c7; }
+  .ng-ui-app input[type='checkbox']:checked + label::before,
+  .ng-ui-app input[type='radio']:checked + label::before {
+    opacity: 0; }
+  .ng-ui-app input[type='checkbox']:checked + label::after,
+  .ng-ui-app input[type='radio']:checked + label::after {
+    opacity: 1;
+    transform: scale(1); }
+  .ng-ui-app input[type='checkbox']:disabled + label,
+  .ng-ui-app input[type='radio']:disabled + label {
+    opacity: .2;
+    cursor: default; }
+
+.ng-ui-app input[type='checkbox'] + label::before {
+  content: 'check_box_outline_blank'; }
+
+.ng-ui-app input[type='checkbox'] + label::after {
+  content: 'check_box'; }
+
+.ng-ui-app input[type='checkbox']:checked + label::before {
+  color: #0098c7; }
+
+.ng-ui-app input[type='radio'] + label::before {
+  content: 'radio_button_unchecked';
+  transition: all .3s ease-out; }
+
+.ng-ui-app input[type='radio'] + label::after {
+  content: 'radio_button_checked';
+  transition: all .1s ease-out; }
+
+.ng-ui-app input[type='radio']:checked + label::before {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s ease-out, opacity .5s; }
+
+.ng-ui-app input[type='radio']:checked + label::after {
+  transition: all .3s ease-out; }
+
+.ng-ui-input {
+  margin: 0 0 1.5em; }
+  .ng-ui-input label {
+    display: block;
+    margin: 0 0 .25em; }
+  .ng-ui-input input[type=text] {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #e6e6e6;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 .75em;
+    border-radius: 2px;
+    font-size: 1em; }
+  .ng-ui-input.error-input input[type=text] {
+    border-color: #ff3333; }
+  .ng-ui-input.error-input ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+    .ng-ui-input.error-input ul li {
+      color: #ff3333;
+      padding: .25em 0;
+      font-weight: 700;
+      font-size: 12px; }
+  .ng-ui-input .ng-ui-keyword {
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    padding: 0 1em;
+    white-space: nowrap;
+    overflow: ellipsis;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+    .ng-ui-input .ng-ui-keyword + .ng-ui-btn {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+
+.pagination-centered {
+  text-align: center; }
+
+.ng-ui-pagination {
+  list-style-type: none;
+  display: inline-block;
+  margin: 1em auto;
+  padding: 0; }
+  .ng-ui-pagination li {
+    float: left;
+    margin: 0 1px 0 0; }
+    .ng-ui-pagination li.to-first, .ng-ui-pagination li.to-last,
+    .ng-ui-pagination li .page-of {
+      display: none; }
+    .ng-ui-pagination li.active .ng-ui-btn {
+      cursor: default; }
+  .ng-ui-pagination .ng-ui-btn {
+    border-radius: 0; }
+    .ng-ui-pagination .ng-ui-btn .md-icon {
+      margin: 0; }
+  @media screen and (max-width: 600px) {
+    .ng-ui-pagination li.to-page:not(.active) {
+      display: none; }
+    .ng-ui-pagination li.to-first, .ng-ui-pagination li.to-last {
+      display: block; }
+    .ng-ui-pagination li .page-of {
+      display: inline-block; } }
+
+/* ng-ui theme for jstree */
+.jstree-ng-ui {
+  font-size: 13px;
+  margin: 0 0 1.5em; }
+  .jstree-ng-ui .jstree-icon {
+    position: relative;
+    z-index: 1; }
+    .jstree-ng-ui .jstree-icon:empty {
+      width: 24px;
+      height: 24px;
+      line-height: 24px; }
+  .jstree-ng-ui .jstree-node {
+    line-height: 24px;
+    position: relative; }
+    .jstree-ng-ui .jstree-node .jstree-node {
+      margin-left: 24px; }
+    .jstree-ng-ui .jstree-node::before {
+      position: absolute;
+      left: 12px;
+      top: 0;
+      content: '';
+      height: 100%;
+      width: 0;
+      border-left: 1px solid #d5d5d5;
+      z-index: 0; }
+    .jstree-ng-ui .jstree-node::after {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      content: '';
+      height: 0;
+      width: 12px;
+      border-top: 1px solid #d5d5d5;
+      z-index: 0; }
+    .jstree-ng-ui .jstree-node.jstree-last::before {
+      height: 12px; }
+    .jstree-ng-ui .jstree-node .jstree-anchor {
+      white-space: normal;
+      word-break: break-word;
+      padding-left: 26px;
+      position: relative; }
+      .jstree-ng-ui .jstree-node .jstree-anchor .jstree-icon {
+        position: absolute;
+        left: 0; }
+  .jstree-ng-ui .jstree-themeicon {
+    font-size: 17px;
+    color: #bdbdbd; }
+    .jstree-ng-ui .jstree-themeicon::before {
+      content: 'folder'; }
+  .jstree-ng-ui .jstree-ocl {
+    font-size: 17px; }
+  .jstree-ng-ui .jstree-closed > .jstree-ocl,
+  .jstree-ng-ui .jstree-open > .jstree-ocl,
+  .jstree-ng-ui .jstree-loading > .jstree-ocl {
+    background: #e6e6e6; }
+    .ng-modal .jstree-ng-ui .jstree-closed > .jstree-ocl, .ng-modal
+    .jstree-ng-ui .jstree-open > .jstree-ocl, .ng-modal
+    .jstree-ng-ui .jstree-loading > .jstree-ocl {
+      background-color: #fff; }
+  .jstree-ng-ui .jstree-closed > .jstree-ocl::before {
+    content: 'add_circle'; }
+  .jstree-ng-ui .jstree-open > .jstree-ocl::before {
+    content: 'remove_circle_outline'; }
+  .jstree-ng-ui .jstree-loading > .jstree-ocl {
+    background: #e6e6e6;
+    background-size: 20px; }
+    .jstree-ng-ui .jstree-loading > .jstree-ocl::before {
+      content: ''; }
+    .ng-modal .jstree-ng-ui .jstree-loading > .jstree-ocl {
+      background-color: #fff; }
+
+.jstree-ng-ui-contextmenu.vakata-context {
+  border: 0;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 6px, rgba(0, 0, 0, 0.117647) 0 1px 4px;
+  border-radius: 2px;
+  padding: 8px 0;
+  z-index: 100;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #404040;
+  text-shadow: none;
+  list-style-type: none;
+  transition: transform 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms, opacity 250ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  transform-origin: left top 0;
+  animation: contextIn .18s ease-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .jstree-ng-ui-contextmenu.vakata-context a {
+    color: inherit;
+    text-shadow: none;
+    border-radius: 0;
+    padding: 0 15px;
+    line-height: 36px;
+    transition: background .2s; }
+    .jstree-ng-ui-contextmenu.vakata-context a .vakata-contextmenu-sep {
+      display: none; }
+    .jstree-ng-ui-contextmenu.vakata-context a i {
+      display: none; }
+  .jstree-ng-ui-contextmenu.vakata-context a:hover,
+  .jstree-ng-ui-contextmenu.vakata-context .vakata-context-hover a {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.1); }
+  .jstree-ng-ui-contextmenu.vakata-context .vakata-context-separator {
+    border-top: 1px solid #e6e6e6; }
+    .jstree-ng-ui-contextmenu.vakata-context .vakata-context-separator a {
+      display: none; }
+
+@keyframes contextIn {
+  0% {
+    transform: scale(1, 0);
+    opacity: 0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+
+.ng-ui-tree li.disabled {
+  color: #808080; }
+
+.ng-ui-tree a.selected {
+  color: #0098c7; }
+
+.ng-ui-app .ng-ui-tabs {
+  margin: 2em 0 3.5em; }
+
+.ng-ui-app .ng-ui-tab-controls {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex; }
+  .ng-ui-app .ng-ui-tab-controls > li {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: #525252;
+    margin: 0; }
+    .ng-ui-app .ng-ui-tab-controls > li.active .ng-ui-tab-control::after {
+      width: 100%;
+      transition: width .25s ease-out; }
+  .ng-ui-app .ng-ui-tab-controls .ng-ui-tab-control {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    position: relative;
+    transition: background .2s; }
+    .ng-ui-app .ng-ui-tab-controls .ng-ui-tab-control:hover {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.1); }
+    .ng-ui-app .ng-ui-tab-controls .ng-ui-tab-control::after {
+      content: '';
+      display: block;
+      transition: width .1s ease-in;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 3px;
+      width: 0;
+      background: #7ac144; }
+
+.ng-ui-app .ng-ui-tab {
+  display: none; }
+  .ng-ui-app .ng-ui-tab.active {
+    display: block;
+    animation: tabFadeIn .35s ease-out; }
+
+@keyframes tabFadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* The Modal (background) */
+.ng-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.54);
+  animation: modalFadeIn .5s; }
+  .ng-modal .content {
+    background-color: #fff;
+    margin: 0;
+    padding: 30px 15px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.247059) 0 14px 45px, rgba(0, 0, 0, 0.219608) 0 10px 18px;
+    border-radius: 2px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    animation: modalSlideIn .5s;
+    max-height: 98%;
+    overflow-y: scroll; }
+  .ng-modal .close {
+    color: #00bdd6;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 28px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    transition: color .2s;
+    z-index: 2; }
+    .ng-modal .close:hover, .ng-modal .close:focus {
+      color: #404040;
+      text-decoration: none;
+      cursor: pointer; }
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes modalSlideIn {
+  0% {
+    margin-top: -100px; }
+  100% {
+    margin-top: 0; } }
+
+.ng-ui-resizable {
+  position: relative; }
+  .ng-ui-resizable .ng-ui-resizable-handle {
+    position: absolute;
+    right: -2px;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 4px;
+    background: transparent;
+    cursor: ew-resize; }
+
+.ng-ui-app .ng-ui-title {
+  margin: 0 0 1.5em; }
+  .ng-ui-app .ng-ui-title .ng-ui-title-note {
+    font-size: .5297545471em;
+    font-weight: 400;
+    color: #999;
+    display: block; }
+    .ng-ui-app .ng-ui-title .ng-ui-title-note strong {
+      font-weight: 400;
+      color: #404040; }
+
+.ng-ui-app table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 0 0 1em; }
+  .ng-ui-app table th,
+  .ng-ui-app table td {
+    padding: 8px 14px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left; }
+  .ng-ui-app table th {
+    background: #e6e6e6; }
+  .ng-ui-app table td {
+    background: #fff; }
+  .ng-ui-app table input[type='checkbox'] + label,
+  .ng-ui-app table input[type='radio'] + label {
+    margin: 0; }
+

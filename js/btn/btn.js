@@ -7,7 +7,7 @@ export default class NgUiBtn {
   init() {
     if (this.el.dataset.nguibtn) return;
     this.setupEvents();
-    this.el.dataset.nguibtn = this;
+    this.el.dataset.nguibtn = true;
   }
 
   setupEvents() {

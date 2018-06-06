@@ -1,4 +1,6 @@
 /* ng-ui theme for jstree */
+@import '../node_modules/jstree/dist/themes/default/style';
+
 $nodeHeight: 24px;
 
 .jstree-ng-ui {
@@ -92,7 +94,8 @@ $nodeHeight: 24px;
     }
     .jstree-loading {
         > .jstree-ocl {
-            background: $sidebarBg url('../images/loader.svg') no-repeat center center;
+            // background: $sidebarBg url('../images/loader.svg') no-repeat center center;
+            background: $sidebarBg;
             background-size: 20px;
             &::before {
                 content: '';

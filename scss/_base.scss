@@ -21,6 +21,12 @@ body.ng-ui-resizing {
     * {
         box-sizing: border-box;
     }
+    .ng-ui-logo {
+        height: 50px;
+        width: $sidebarWidth;
+        background: hsl(0, 0, 20) url($mainLogoPath) no-repeat center center;
+        background-size: auto 60%;
+    }
     .ng-ui-container {
         height: 100%;
         width: 100%;
