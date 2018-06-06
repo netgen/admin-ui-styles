@@ -12,6 +12,10 @@ Including:
 
 Install the Node dependency:
 ```
+yarn add @netgen/admin-ui
+```
+or
+```
 npm install @netgen/admin-ui
 ```
 
