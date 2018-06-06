@@ -51,7 +51,7 @@ import { NgUiInit } from '@netgen/admin-ui';
 NgUiInit();
 ```
 
-#### Tree
+### Tree
 
 To include only tree plugin and initialize it:
 ```js
@@ -66,7 +66,7 @@ Second parameters are options for the tree:
 - treeClassName - string - class name for div on which jstree is initialized (default 'ng-ui-tree')
 - modalClassName - string - class name for modal div in which tree is opened (default 'ng-modal')
 
-#### Tabs
+### Tabs
 
 To include only tabs plugin and initialize it:
 ```js
@@ -99,7 +99,7 @@ Html markup for the tabs should be:
 
 Last active tab is remembered in localStorage.
 
-#### Buttons
+### Buttons
 
 To include only buttons plugin and initialize it:
 ```js
@@ -110,13 +110,13 @@ NgUiTabsInit('ng-ui-btn');
 
 Function parameter is the class name for the button elements (default 'ng-ui-btn').
 
-#### Sidebar resize
+### Sidebar resize
 
 Plugin initializes with main init function (NgUiInit).
 Class name for resizable sidebar div should be `'ng-ui-sidebar-resizable'`.
 Resizable sidebar connects with main logo and resizes it while resizing sidebar. Logo class name should be `'ng-ui-logo'`.
 
-#### Checkbox enable/disable buttons
+### Checkbox enable/disable buttons
 
 Plugin initializes with main init function (NgUiInit).
 Use it to enable/disable buttons with checkbox inputs.
