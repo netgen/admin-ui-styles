@@ -51,6 +51,8 @@ import { NgUiInit } from '@netgen/admin-ui';
 NgUiInit();
 ```
 
+If you can't use ES2015 modules and don't need tu initialize plugin on specific event, you can include already built js file from `node_modules/@netgen/admin-ui/dist/js/include/ngui.js` which initializes all of the UI plugins on window load.
+
 ### Tree
 
 To include only tree plugin and initialize it:
