@@ -1,6 +1,6 @@
 {
   "name": "@netgen/admin-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NPM package providing base styles for building admin UI interfaces",
   "keywords": [
     "admin",
