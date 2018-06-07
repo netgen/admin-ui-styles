@@ -42,6 +42,8 @@ $baseFont: 'Roboto', Helvetica, Arial, sans-serif;
 $mainLogoPath: '../images/ng-ui-logo.svg';
 ```
 
+If you don't use scss, you can include already built css file from `node_modules/@netgen/admin-ui/dist/css/style.css` or minified `style.min.css`.
+
 ## Using JS
 
 To include the ES2015 modules and initialize the plugins for all of the UI plugins:
