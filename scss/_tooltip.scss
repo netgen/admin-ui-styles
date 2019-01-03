@@ -1,0 +1,107 @@
+.ng-ui-tt {
+    cursor: pointer;
+}
+.ng-ui-tt-content {
+    $tooltipBg: hsla(0, 0, 0, .75);
+    position: absolute;
+    background: $tooltipBg;
+    padding: .75em 1em;
+    font-size: 13px;
+    color: #fff;
+    max-width: 18em;
+    z-index: 1001;
+    border-radius: $borderRadius;
+    opacity: 1;
+    transition: opacity .2s;
+    a {
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            color: hsl(0, 0, 80);
+        }
+    }
+    &.out {
+        opacity: 0;
+    }
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        display: block;
+    }
+    &[data-x='left'] {
+        text-align: right;
+        &::before {
+            border-left: .375em solid $tooltipBg;
+            border-top: .25em solid transparent;
+            border-bottom: .25em solid transparent;
+            border-right: 0;
+            left: 100%;
+            top: 50%;
+            margin-top: -.1875em;
+        }
+        &[data-y='top'] {
+            &::before {
+                bottom: .625em;
+                top: auto;
+                margin-top: 0;
+            }
+        }
+        &[data-y='bottom'] {
+            &::before {
+                top: .625em;
+                margin-top: 0;
+            }
+        }
+    }
+    &[data-x='right'] {
+        &::before {
+            border-right: .375em solid $tooltipBg;
+            border-top: .25em solid transparent;
+            border-bottom: .25em solid transparent;
+            border-left: 0;
+            right: 100%;
+            top: 50%;
+            margin-top: -.1875em;
+        }
+        &[data-y='top'] {
+            &::before {
+                bottom: .625em;
+                top: auto;
+                margin-top: 0;
+            }
+        }
+        &[data-y='bottom'] {
+            &::before {
+                top: .625em;
+                margin-top: 0;
+            }
+        }
+    }
+    &[data-x='center'] {
+        text-align: center;
+        &::before {
+            margin-left: -.1875em;
+            left: 50%;
+        }
+        &[data-y='bottom'] {
+            &::before {
+                border-bottom: .375em solid $tooltipBg;
+                border-left: .25em solid transparent;
+                border-right: .25em solid transparent;
+                border-top: 0;
+                bottom: 100%;
+            }
+        }
+        &[data-y='top'] {
+            &::before {
+                border-top: .375em solid $tooltipBg;
+                border-left: .25em solid transparent;
+                border-right: .25em solid transparent;
+                border-bottom: 0;
+                top: 100%;
+            }
+        }
+    }
+}

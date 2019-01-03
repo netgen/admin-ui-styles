@@ -2,6 +2,7 @@ import NgUiBtn from './btn/btn';
 import NgUiTabs from './tabs/tabs';
 import NgUiTree from './tree/tree';
 import NgUiResize from './resize/resize';
+import NgUiTooltip from './tooltip/tooltip';
 import enableBtns from './enableBtns/enableBtns';
 
 function NgUiBtnInit(className) {
@@ -24,12 +25,18 @@ function NgUiResizeInit(className, options) {
   [].forEach.call(nguiresize, el => new NgUiResize(el, options || { connectWith: '.ng-ui-logo' }));
 }
 
+function NgUiTooltipInit(className) {
+  const nguitooltips = document.getElementsByClassName(className || 'ng-ui-tt');
+  [].forEach.call(nguitooltips, el => new NgUiTooltip(el));
+}
+
 function NgUiInit() {
   NgUiBtnInit();
   NgUiTabsInit();
   NgUiTreeInit();
+  NgUiTooltipInit();
   enableBtns();
   NgUiResizeInit();
 }
 
-export { NgUiInit, NgUiBtnInit, NgUiTabsInit, NgUiTreeInit };
+export { NgUiInit, NgUiBtnInit, NgUiTabsInit, NgUiTreeInit, NgUiTooltipInit };

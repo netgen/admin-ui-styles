@@ -12,8 +12,8 @@
     @mixin spacing($pref: '') {
         @for $i from 1 through 12 {
             .col-#{$pref}#{$i} {
-                flex: 0 0 (100 * $i / 12) + %;
-                max-width: (100 * $i / 12) + %;
+                flex: 0 0 (100% * $i / 12);
+                max-width: (100% * $i / 12);
             }
         }
     }
