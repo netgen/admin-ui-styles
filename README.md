@@ -114,6 +114,23 @@ NgUiTabsInit('ng-ui-btn');
 
 Function parameter is the class name for the button elements (default 'ng-ui-btn').
 
+### Tooltip
+
+To include only tooltip plugin and initialize it:
+```js
+import { NgUiTooltipInit } from '@netgen/admin-ui';
+
+NgUiTooltipInit('ng-ui-tt');
+```
+
+Function parameter is the class name for the tooltip elements (default 'ng-ui-tt').
+
+Required markup for a tooltip is only css class (default: 'ng-ui-tt', can be overriden with initialization parameter), and title attribute for element you wish to have a tooltip. Title can have html markup, but all of the quotes inside of it must be single.
+Example:
+```html
+<span class="ng-ui-tt" title="Lorem ipsum <a href='#'>dolor sit amet</a>, consectetur?">some text</span>
+```
+
 ### Sidebar resize
 
 Plugin initializes with main init function (NgUiInit).
