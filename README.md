@@ -5,6 +5,7 @@ Including:
 - jsTree
 - buttons with effect
 - tabs
+- tooltips
 - resizable sidebar
 - checkbox enabled/disabled buttons
 
@@ -114,7 +115,7 @@ NgUiTabsInit('ng-ui-btn');
 
 Function parameter is the class name for the button elements (default 'ng-ui-btn').
 
-### Tooltip
+### Tooltips
 
 To include only tooltip plugin and initialize it:
 ```js
