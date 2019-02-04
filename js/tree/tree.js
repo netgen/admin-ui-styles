@@ -1,5 +1,4 @@
 import $ from 'jquery';
-
 require('jstree');
 
 /* options for NgUiTree class
@@ -29,6 +28,7 @@ export default class NgUiTree {
   }
 
   treeInit() {
+    global.$ = global.jQuery = $;
     this.el.dataset.nguitree = true;
     this.$tree.jstree({
       plugins: ['sort', 'contextmenu', 'ui'],
